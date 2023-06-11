@@ -1,13 +1,5 @@
 /**
- *Submitted for verification at Etherscan.io on 2023-06-02
-*/
-
-/**
- *Submitted for verification at Etherscan.io on 2023-06-02
-*/
-
-/**
- *Submitted for verification at Etherscan.io on 2022-10-03
+ *Submitted for verification at Etherscan.io on 2023-06-11
 */
 
 // SPDX-License-Identifier: UNLICENSED
@@ -223,7 +215,7 @@ contract SnakeEyes is ERC20, Ownable {
     modifier swapping() { inSwap = true; _; inSwap = false; }
 
     constructor () {
-        router = IDEXRouter(0x7DE8063E9fB43321d2100e8Ddae5167F56A50060); // X7 Router
+        router = IDEXRouter(0x7a250d5630B4cF539739dF2C5dAcb4c659F2488D); 
         WETH = router.WETH();
         pair = IDEXFactory(router.factory()).createPair(WETH, address(this));
 
